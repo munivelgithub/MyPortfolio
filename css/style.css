@@ -185,13 +185,13 @@ body.light.contact .contactform textarea {
   background-color: #fff;
   border: 1px solid #ddd;
   color: #666;
+  width: 50%;
 }
 
 body.light.contact ul.social li a {
   color: #666;
   background: #eee;
 }
-
 body.light.contact ul.social li a:hover {
   color: #fff;
 }
@@ -718,8 +718,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .portfolio .slideshow .carousel-indicators li.active,
 .button:before
  {
-  background-color: white;
-  color: black;
+
 
   background-color:rgb(235, 83, 83) !important; 
   color: whitesmoke;
@@ -771,7 +770,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 /* Personal Info List */
 
 .about .about-list li:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .about .about-list .title {
@@ -785,7 +784,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 
 /* Box Stats */
 
-.about .box-stats {
+.about.box-stats {
   padding: 20px 30px 25px 40px;
   border-radius: 5px;
   border: 1px solid #252525;
@@ -840,7 +839,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
   margin: 0 0 50px;
 }
 
-.about .resume-box li:after {
+.Education .resume-box li:after {
   content: "";
   position: absolute;
   top: 0;
@@ -849,7 +848,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
   border-left: 1px solid #333;
 }
 
-.about .resume-box .icon {
+.Education .resume-box .icon {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -859,12 +858,12 @@ body.light .header ul.icon-menu li.icon-box:hover,
   text-align: center;
   z-index: 1;
   border-radius: 50%;
-  color: #fff;
+  color: #de0505;
   background-color: #252525;
 }
 
-.about .resume-box .time {
-  color: #fff;
+.Education .resume-box .time {
+  color: #170e0e;
   font-size: 12px;
   padding: 1px 10px;
   display: inline-block;
@@ -875,18 +874,18 @@ body.light .header ul.icon-menu li.icon-box:hover,
   opacity: .8;
 }
 
-.about .resume-box h5 {
+.Education .resume-box h5 {
   font-size: 18px;
   margin: 7px 0 10px;
 }
 
-.about .resume-box p {
+.Education .resume-box p {
   margin: 0;
   color: #eee;
   font-size: 14px;
 }
 
-.about .resume-box .place {
+.Education .resume-box .place {
   opacity: .8;
   font-weight: 600;
   font-size: 15px;
@@ -894,12 +893,12 @@ body.light .header ul.icon-menu li.icon-box:hover,
   padding-left: 26px;
 }
 
-.about .resume-box .place:before {
+.Education .resume-box .place:before {
   position: absolute;
   content: '';
   width: 10px;
   height: 2px;
-  background-color: #fff;
+  background-color: #760c0c;
   left: 7px;
   top: 9px;
   opacity: .8;
@@ -907,18 +906,18 @@ body.light .header ul.icon-menu li.icon-box:hover,
 
 /* Skills */
 
-.about .c100 {
+.Education .c100 {
   float: none !important;
   margin: 0 auto;
-  background-color: #252525;
+  background-color: #ed0909;
 }
 
-.about .c100>span {
-  color: #fff;
+.skill .c100>span {
+  color: #070101;
 }
 
-.about .c100:after {
-  background-color: #111;
+.skill .c100:after {
+  background-color: #fef5f5;
 }
 
 /*** Portfolio ***/
@@ -1233,6 +1232,132 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .contact ul.social li {
   display: inline-block;
 }
+/* Basic Styles */
+
+
+/* Main Content Section */
+.main-content {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Separator Style */
+.separator {
+  border: 0;
+  height: 1px;
+  background: #9f5b5b;
+  margin: 30px 0;
+}
+
+/* Title Styling */
+.custom-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #bb0808;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-sm-center {
+  text-align: center;
+}
+
+.ft-wt-600 {
+  font-weight: 600;
+}
+
+/* Education Section */
+.resume-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-box ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #171616;
+}
+
+.resume-box .icon {
+  width: 40%;
+  height: 0px;
+  background-color: #0a0909;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.resume-box .icon i {
+  font-size: 30px;
+  color: #f2e2e2;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.open-sans-font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #dccccc;
+}
+
+/* Time & Place Styling */
+.time {
+  font-size: 14px;
+  color: #f0ecec;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: block;
+}
+
+/* Education Details */
+.resume-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f7f3f3;
+  padding: 10px;
+  margin: 0;
+}
+
+.resume-box .place {
+  font-size: 14px;
+  padding: 20px;
+  color: #d5bbbb;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  .resume-box ul li {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .resume-box .icon {
+      margin-bottom: 10px;
+  }
+
+  .text-left {
+      text-align: center;
+  }
+}
+
 
 .contact ul.social li a {
   display: inline-block;
